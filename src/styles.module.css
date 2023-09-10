@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: linear-gradient(to right, #565d68, #3e4553);
+}
+
+.AppWrapper {
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  height: 850px;
+  background-color: #0b121e;
+  border-radius: 25px;
+}
+
+.searchItem {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 20px;
+  margin: 30px;
+  background-color: #0b121e;
+}
+
+.searchItem > input {
+  width: 650px;
+  font-size: 25px;
+  padding: 8px;
+  background-color: #444e5a;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+}
+
+.searchItem > button {
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 80px 0px 80px 0px;
+  padding: 0 35px;
+  color: white;
+  background-color: #0095ff;
+}
+
+.mainView {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+.nowCard {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: auto;
+
+  margin-top: -30px;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+}
+
+.section1 {
+  width: 80%;
+  margin-left: 130px;
+}
+
+.section1 > img {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -80px;
+}
+
+.section1 > h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.section1 > p {
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.section1 > span {
+  color: #444e5a;
+  font-size: 21px;
+  margin-left: 25px;
+}
+
+.section2 {
+  padding-top: 15px;
+  background-color: #202b3c;
+  width: 95%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+.section2 > h2 {
+  color: #656a71;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.hourlyForecast {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.sixAM,
+.nineAM,
+.twelveAM {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: auto;
+  align-items: center;
+  border-right: 1px solid #444e5a;
+  margin-left: 15px;
+}
+
+.sixAM > p,
+.nineAM > p,
+.twelveAM > p {
+  color: #656a71;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.threePM,
+.sixPM {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: auto;
+  align-items: center;
+  border-right: 1px solid #444e5a;
+  margin-left: 15px;
+}
+
+.ninePM {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: auto;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.threePM > p,
+.sixPM > p,
+.ninePM > p {
+  color: #656a71;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section3 {
+  padding-top: 10px;
+  background-color: #202b3c;
+  width: 95%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.conditionsSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.conditionsSection > h2 {
+  color: #656a71;
+  margin-left: -30px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.conditionsSection > button {
+  font-size: 20px;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #0095ff;
+  margin-left: 64%;
+}
+
+.conditionInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  border-radius: 0 0 15px 15px;
+  margin-bottom: 15px;
+}
+
+.infoRow1,
+.infoRow2 {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+
+.leftRow1,
+.leftRow2,
+.rightRow1,
+.rightRow2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftRow1 > p,
+.leftRow2 > p,
+.rightRow1 > p,
+.rightRow2 > p {
+  font-size: 22px;
+  color: #656a71;
+  font-weight: bold;
+}
+
+.leftRow1 > span,
+.leftRow2 > span,
+.rightRow1 > span,
+.rightRow2 > span {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  height: 740px;
+  border-radius: 20px;
+  background-color: #202b3c;
+}
+
+.rigthSideHeader {
+  margin-bottom: 15px;
+}
+
+.rigthSideHeader > h2 {
+  color: #656a71;
+  margin-left: -30px;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.rightDay1,
+.rightDay2,
+.rightDay3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  border-bottom: 1px solid #444e5a;
+}
+
+.rightDay1 {
+  height: 170px;
+
+  border-top: 2px solid #444e5a;
+}
+
+.rightDay1 > div > p,
+.rightDay2 > div > p,
+.rightDay3 > div > p {
+  font-size: 20px;
+  color: #656a71;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.rightDay1 > div > span,
+.rightDay2 > div > span,
+.rightDay3 > div > span {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.rightDay1 > img,
+.rightDay2 > img,
+.rightDay3 > img {
+  width: 50px;
+  height: 50px;
+}
+
+.grey {
+  color: #656a71 !important;
+}
